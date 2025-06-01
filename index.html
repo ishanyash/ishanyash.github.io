@@ -1,955 +1,352 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
-    <!--<![endif]-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ishan-portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="profile">
+            <img src="https://github.com/ishanyash.png" alt="GitHub Profile" class="profile-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tableau">Tableau</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="https://github.com/ishanyash" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+    </nav>
 
-    <head>
-        <!--- Basic Page Needs  -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Ishan Yash</h1>
+                <p>Data Scientist specializing in AI and marketing analytics, building innovative solutions with Python, AWS, and machine learning.</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
 
-        <!-- meta charec set -->
-        <meta charset="utf-8">
-        <!-- Page Title -->
-        <title>Ishan Yash</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Author Meta -->
-        <meta name="author" content="Ishan Yash">
-        <!-- Meta Description -->
-        <meta name="description" content="One Page Creative Personal HTML5 Template">
-        <!-- Meta Keyword -->
-        <meta name="keywords" content="onepage, responsive, cv, resume, business, html5, css3, css3 animation">
-        <!-- Mobile Specific Meta  -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <section id="github-activity">
+            <div class="github-profile">
+                <img src="https://github.com/ishanyash.png" alt="GitHub Profile" class="github-avatar">
+                <span class="github-username">@ishanyash</span>
+            </div>
+            <div class="github-contributions">
+                <div class="contribution-graph">
+                    <!-- GitHub contribution graph would be here -->
+                    <p>364 contributions in the last year</p>
+                </div>
+                <div class="contribution-count">
+                    <h2>550</h2>
+                    <span>CONTRIBUTIONS</span>
+                </div>
+                <a href="https://github.com/ishanyash" target="_blank" rel="noopener noreferrer" class="github-link">View GitHub Profile</a>
+            </div>
+        </section>
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
+        <section id="about">
+            <h2>About Me</h2>
+            
+            <div class="about-container">
+                <div class="professional-background">
+                    <h3>Professional Background</h3>
+                    
+                    <div class="professional-experience">
+                        <h3>Professional Experience</h3>
+                        
+                        <div class="experience-item">
+                            <div class="timeline-dot"></div>
+                            <div class="experience-content">
+                                <div class="experience-date">Mar 2025 - Present</div>
+                                <div class="experience-title">Data Scientist - AI</div>
+                                <div class="experience-company">Subfocus, London</div>
+                                <p>Leading AI initiatives and developing machine learning models for marketing analytics.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <div class="timeline-dot"></div>
+                            <div class="experience-content">
+                                <div class="experience-date">Jan 2024 - Mar 2025</div>
+                                <div class="experience-title">Data Analyst - II</div>
+                                <div class="experience-company">Octopus Energy, London</div>
+                                <p>Analyzed energy consumption patterns and developed predictive models for customer behavior.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <div class="timeline-dot"></div>
+                            <div class="experience-content">
+                                <div class="experience-date">Dec 2022 - Dec 2023</div>
+                                <div class="experience-title">Data Analyst</div>
+                                <div class="experience-company">Room AI, London</div>
+                                <p>Implemented data pipelines and visualization dashboards for business intelligence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education">
+                    <h3>Education</h3>
+                    
+                    <div class="education-item">
+                        <a href="https://www.wbs.ac.uk/" target="_blank" rel="noopener noreferrer">
+                            <img src="wbs-logo.png" alt="Warwick Business School Logo" class="school-logo">
+                        </a>
+                        <h4>MSc. Business Analytics</h4>
+                        <p>Warwick Business School, Coventry, UK</p>
+                        <p>Key modules: Data Management, Text Analytics (NLP), Business Statistics, Project Management</p>
+                    </div>
+                    
+                    <div class="education-item">
+                        <a href="https://vit.ac.in/" target="_blank" rel="noopener noreferrer">
+                            <img src="vit-logo.png" alt="Vellore Institute of Technology Logo" class="school-logo">
+                        </a>
+                        <h4>B. Tech Electronics Engineering</h4>
+                        <p>Vellore Institute of Technology, India</p>
+                        <p>Spec. IoT and Sensors - Key modules: AI with Python, Cloud Computing and IoT, Sensor Design and Integration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- CSS
-        ================================================== -->
-        <!-- Twitter Bootstrap css -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <!-- Simple Line Icon font -->
-        <link rel="stylesheet" href="assets/css/simple-line-icons.css">
-        <!-- Slick Nav -->
-        <link rel="stylesheet" href="assets/css/slicknav.css">
-        <!-- Owl Carousel -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <!-- Slick Slider -->
-        <link rel="stylesheet" href="assets/css/slick.css">
-        <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!-- media-queries (Responsive File) -->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-    </head>
+        <section id="technical-skills">
+            <h2>Technical Skills</h2>
+            
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Languages & Analytics</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Excel (VBA)</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Databricks</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Tech Stack</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">dbt</span>
+                        <span class="skill-tag">Airflow</span>
+                        <span class="skill-tag">BigQuery</span>
+                        <span class="skill-tag">Snowflake</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Langchain</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Frameworks</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">PySpark</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <body id="body" data-spy="scroll" data-target="#navigation" data-offset="300">
+        <section id="tableau">
+            <h2>Tableau Dashboards</h2>
+            
+            <div class="tableau-slider">
+                <div class="tableau-slide active">
+                    <div class="tableau-content">
+                        <div class="tableau-info">
+                            <h3>London Map Interactive Dashboard</h3>
+                            <p>Explore my interactive data visualization created with Tableau, showcasing detailed London map data with multiple interactive filters and insights.</p>
+                            <div class="tableau-stats">
+                                <div class="stat">
+                                    <span class="stat-value">15+</span>
+                                    <span class="stat-label">DATA POINTS</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">7</span>
+                                    <span class="stat-label">INTERACTIVE FILTERS</span>
+                                </div>
+                            </div>
+                            <a href="https://public.tableau.com/views/Finallondonmap_17006781129530/FinalDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener noreferrer" class="tableau-link">View Full Dashboard</a>
+                        </div>
+                        <div class="tableau-preview">
+                            <img src="tableau-preview.jpg" alt="London Map Interactive Dashboard Preview" class="tableau-img">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tableau-slide">
+                    <div class="tableau-content">
+                        <div class="tableau-info">
+                            <h3>Sales Performance Analytics</h3>
+                            <p>Comprehensive sales analytics dashboard with real-time KPI tracking and performance metrics for business decision-making.</p>
+                            <div class="tableau-stats">
+                                <div class="stat">
+                                    <span class="stat-value">12</span>
+                                    <span class="stat-label">KPIs TRACKED</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">4</span>
+                                    <span class="stat-label">FORECAST MODELS</span>
+                                </div>
+                            </div>
+                            <a href="https://public.tableau.com/views/Finallondonmap_17006781129530/FinalDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener noreferrer" class="tableau-link">View Full Dashboard</a>
+                        </div>
+                        <div class="tableau-preview">
+                            <img src="tableau-preview.jpg" alt="Sales Performance Analytics Preview" class="tableau-img">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tableau-slide">
+                    <div class="tableau-content">
+                        <div class="tableau-info">
+                            <h3>Customer Segmentation Analysis</h3>
+                            <p>Advanced customer segmentation dashboard using clustering algorithms to identify key customer groups and behavior patterns.</p>
+                            <div class="tableau-stats">
+                                <div class="stat">
+                                    <span class="stat-value">5</span>
+                                    <span class="stat-label">CUSTOMER SEGMENTS</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">8</span>
+                                    <span class="stat-label">BEHAVIOR METRICS</span>
+                                </div>
+                            </div>
+                            <a href="https://public.tableau.com/views/Finallondonmap_17006781129530/FinalDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener noreferrer" class="tableau-link">View Full Dashboard</a>
+                        </div>
+                        <div class="tableau-preview">
+                            <img src="tableau-preview.jpg" alt="Customer Segmentation Analysis Preview" class="tableau-img">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                
+                <div class="slider-nav">
+                    <button class="prev-slide">&lt;</button>
+                    <button class="next-slide">&gt;</button>
+                </div>
+            </div>
+        </section>
 
-         <!-- Start Preloader Area -->
-        <div class="preloader-area">
-            <div class="loader">
-                <div class="loader-inner"></div>
-                <div class="loader-inner"></div>
-                <div class="loader-inner"></div>
-                <div class="loader-inner"></div>
-                <div class="loader-inner"></div>
-                <div class="loader-inner"></div>
-                <div class="loader-inner"></div>
-                <div class="loader-inner"></div>
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project-property.jpg" alt="Property Valuation GenAI Tool">
+                    </div>
+                    <div class="project-content">
+                        <h3>Property Valuation GenAI Tool</h3>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-value">95%</span>
+                                <span class="stat-label">ACCURACY</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-value">3.2x</span>
+                                <span class="stat-label">FASTER ANALYSIS</span>
+                            </div>
+                        </div>
+                        <p>A GenAI-powered tool with 95% postcode-based valuation accuracy, enabling investors to assess ROI using automated market insights.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">GenAI</span>
+                            <span class="project-tag">Property</span>
+                            <span class="project-tag">Valuation</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <a href="https://github.com/ishanyash/property-valuation" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project-stock.jpg" alt="Apple Stock Price Forecasting">
+                    </div>
+                    <div class="project-content">
+                        <h3>Apple Stock Price Forecasting</h3>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-value">98%</span>
+                                <span class="stat-label">CLASSIFICATION ACCURACY</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-value">87%</span>
+                                <span class="stat-label">PREDICTION RATE</span>
+                            </div>
+                        </div>
+                        <p>Stock price forecasting approach combining sentiment analysis, word2vec, and feature engineering to provide insightful analysis for investors.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">Word2Vec</span>
+                            <span class="project-tag">Finance</span>
+                            <span class="project-tag">Machine Learning</span>
+                        </div>
+                        <a href="https://github.com/ishanyash/stock-forecasting" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project-yelp.jpg" alt="Yelp Review Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3>Yelp Review Analysis</h3>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-value">92%</span>
+                                <span class="stat-label">ACCURACY</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-value">10K+</span>
+                                <span class="stat-label">REVIEWS ANALYZED</span>
+                            </div>
+                        </div>
+                        <p>Investigation of large volumes of review data using NLP and classification methods to understand customer behavior and spending patterns.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Text Mining</span>
+                            <span class="project-tag">Classification</span>
+                            <span class="project-tag">Customer Behavior</span>
+                        </div>
+                        <a href="https://github.com/ishanyash/yelp-analysis" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h2>Ishan Yash</h2>
+                <p>Data Scientist specializing in AI and marketing analytics</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/ishanyash" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/ishanyash" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:yashishan1798@gmail.com">Email</a>
             </div>
         </div>
-        <!-- End Preloader Area -->
+        <div class="footer-copyright">
+            <p>&copy; 2025 Ishan Yash. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <!-- Header Start -->
-        <header>
-            <div class="header-area header-transparrent">
-                <div class="main-header header-sticky">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2 col-md-2">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-10 col-md-10">
-                                <!-- Main-menu -->
-                                <div class="main-menu float-right d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li class="nav-item"><a class="nav-link transition active" href="#body"> Home</a></li>
-                                            <li class="nav-item"><a class="nav-link transition" href="#services">Services</a></li>
-                                            <li class="nav-item"><a class="nav-link transition" href="#about">About</a></li>
-                                            <li class="nav-item"><a class="nav-link transition" href="#resume">Resume</a></li>
-                                            <li class="nav-item"><a class="nav-link transition" href="#works">Works</a></li>
-                                            <li class="nav-item"><a class="nav-link transition" href="#blog">Blog</a>
-                                                <ul class="submenu transition">
-                                                    <li><a href="#">Blog</a></li>
-                                                    <li><a href="#">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="nav-item"><a class="nav-link transition" href="#contact">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Header End -->
-
-        <!-- Welcome Area Start -->
-        <section class="hero-area sky-blue d-flex align-items-center">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <!-- Start Hero Caption -->
-                        <div class="hero-caption">
-                            <span class="subheading">Hey! I am</span>
-                            <h1>Ishan Yash !</h1>
-                            <div>I'm a 
-                                <!-- Animated Text Writer -->
-                                <span class="txt-rotate" data-period="600"
-                                             data-rotate='[ "Freelancer.", "Data Engineer.", "Business Analyst.", "Photographer."]'></span>
-                            </div>
-                            <p>Thanks for visiting, but the website is still under construction.</p>
-                        </div>
-                        <!-- End Hero Caption -->
-                    </div>
-                    <div class="col-lg-6 d-none d-lg-block">
-                        <!-- Hero Right Image -->
-                        <div class="hero-img">
-                            <img src="https://via.placeholder.com/500x716" alt="Hero image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Hero Animated Shape -->
-            <div class="hero-shape custom-animation">
-                <img src="assets/img/hero/hero-shape.png" alt="animation shape">
-            </div>
-            
-        </section>
-        <!-- Welcome Area End -->
-
-        <!-- Services Area Start -->
-        <section class="service-area section-padding" id="services">
-            <div class="container">
-                
-                <div class="row align-items-center">
-                    <div class="col-lg-5 mb-5 mb-lg-0">
-                        
-                        <div class="process-block pl-4">
-                            <span class="text-uppercase text-sm letter-spacing">My Services</span>
-                            <h2 class="service-title mb-4 mt-3">Unlock the power of your data and make informed, Data - Driven decisions</h2>
-                            <p>As a skilled and experienced data science professional, I am excited to offer my expertise and knowledge 
-                                to a dynamic and innovative firm. With a strong background in statistics, programming, and engineering sciences, 
-                                I am well-equipped to tackle complex data analysis and machine learning projects, while also remaining 
-                                proficient in key industry tools such as Python, R, and SQL. Additionally, I am always on the lookout for 
-                                new and emerging technologies such as SAP, Robotic Process Automation, Algorithm, and AI assurance, and 
-                                Data Engineering practices, to stay current and bring fresh ideas to the table.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7 col-md-12">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <!-- Start Single Service Block -->
-                                <div class="service-block text-center mb-4 mb-lg-0">
-                                    <i class="fa fa-bar-chart"></i>
-                                    <h4>Data analysis and Visualisation</h4>
-                                    <p>I assist clients in analyzing their data to uncover patterns</p>
-                                </div>
-                                <!-- End Single Service Block -->
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                 <!-- Start Single Service Block -->
-                                <div class="service-block text-center mt-4 mb-4 mb-lg-0">
-                                    <i class="fa fa-database"></i>
-                                    <h4>Data Collection and Storage</h4>
-                                    <p>I can assist in collecting and storing data from various sources, 
-                                        ensuring that it is clean, accurate, and easily accessible.</p>
-                                </div>
-                                 <!-- End Single Service Block -->
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                 <!-- Start Single Service Block -->
-                                <div class="service-block text-center">
-                                    <i class="fa fa-cube"></i>
-                                    <h4>Data Modelling and Forecast</h4>
-                                    <p>I can create models that help clients 
-                                        predict future trends and outcomes 
-                                        based on historical data, providing 
-                                        insights that can guide decision-making.</p>
-                                </div>
-                                 <!-- End Single Service Block -->
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                 <!-- Start Single Service Block -->
-                                <div class="service-block text-center mt-4">
-                                    <i class="fa fa-shield"></i>
-                                    <h4>Data Governance and Security</h4>
-                                    <p>I assist clients in ensuring that their data 
-                                        is secure and compliant with regulations</p>
-                                </div>
-                                 <!-- End Single Service Block -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services Area End -->
-
-        <!-- About Area Start -->
-        <section class="about-area section-padding sky-blue" id="about">
-            <div class="container">
-
-                <div class="row align-items-center">
-                    <div class="col-lg-6 d-none d-lg-block">
-                         <!-- Start About Area Image -->
-                        <div class="img-about">
-                            <img class="img-fluid" src="https://via.placeholder.com/824x1024" alt="abou me">
-                        </div>
-                        <!-- End About Area Image -->
-                    </div>
-
-                    <div class="col-lg-6 col-md-12">
-                        <!-- Start About Detail -->
-                        <div class="about-details">
-                            <div class="section-title mb-50">
-                                <h2>About Me</h2>
-                            </div>
-                            <p>I am an experienced data science professional with a background in statistics, 
-                                programming, and engineering sciences. Skilled in Python, R, and SQL, I tackle 
-                                complex data analysis and machine learning projects. I have worked globally and 
-                                am an analytical thinker, problem solver, and natural leader. I communicate findings 
-                                effectively to non-technical stakeholders and focus on team building. Seeking new 
-                                opportunities to make a meaningful impact and continue growing as a professional.</p>
-                            <ul class="about-info mt-4">
-                                <li><span>Name:</span> <span>Ishan Yash</span></li>
-                                <li><span>Date of birth:</span> <span>September 17, 1998</span></li>
-                                <li><span>Address:</span> <span>Coventry, UK</span></li>
-                                <li><span>Zip code:</span> <span>CV1 2JU</span></li>
-                                <li><span>Email:</span> <span> ishan.yash17@gmail.com</span></li>
-                                <li><span>Phone: </span> <span>+91 7030609563; +44 7880030984</span></li>
-                            </ul>
-                            <div class="download-btn mt-5">
-                                <a class="btn radius-btn" href="https://drive.google.com/file/d/1xK1n_krO-5GPOVuHXgeFFbOTFWukmzJz/view" target="_blank">Download Resume</a>
-                            </div>
-                        </div>
-                        <!-- End About Detail -->
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- About Area End -->
-
-        <!-- Resume Area Start -->
-        <section class="resume-area section-padding" id="resume">
-            <div class="container">
-                <!-- Start Section Title -->
-                <div class="row mb-50">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Resume</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Section Title -->
-                <div class="row">
-                    <div class="col-lg-3 d-none d-lg-block">
-                        <!-- Start Resume Nav -->
-                        <nav id="navi">
-                            <ul>
-                                <li><a href="#page-1">Education</a></li>
-                                <li><a href="#page-2">Experience</a></li>
-                                <li><a href="#page-3">Skills</a></li>
-                                <li><a href="#page-4">Awards</a></li>
-                            </ul>
-                        </nav>
-                         <!-- End Resume Nav -->
-                    </div>
-                    <div class="col-lg-9 col-md-12">
-                         <!-- Start Education -->
-                        <div id="page-1" class="page one">
-                            <h3 class="heading">Education</h3>
-                            <div class="resume-wrap transition d-flex">
-                                <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="icon-graduation"></span>
-                                </div>
-                                <div class="text pl-3">
-                                    <span class="date">2021-23</span>
-                                    <h4>Masters in Business Analytics</h4>
-                                    <span class="position">Warwick Business School</span>
-                                    <p>Activities and societies: Warwick Barbell Society, Warwick Artificial intelligence Society, Raising and Giving
-                                       Subjects Taught: Analytics in Practice, Business Statistics, Data Management, Optimisation models, Advanced Modelling, Advanced Data Analysis, Text Analytics, Project Skills.</p>
-                                </div>
-                            </div>
-                            <div class="resume-wrap transition d-flex">
-                                <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="icon-graduation"></span>
-                                </div>
-                                <div class="text pl-3">
-                                    <span class="date">2016-2020</span>
-                                    <h4>Bachelors in Electronics and Communication</h4>
-                                    <span class="position">VIT Vellore</span>
-                                    <p>Activities and societies: TEDx VITVellore, Photography Club, Music Club, Shotput
-                                        The course was with a specialization in IoT, It was a combination of classical electronics and new era IoT and sensor technology perfectly delivered via VIT's world-class teaching faculty and facilities.</p>
-                                </div>
-                            </div>
-                            <div class="resume-wrap transition d-flex">
-                                <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="icon-graduation"></span>
-                                </div>
-                                <div class="text pl-3">
-                                    <span class="date">2020</span>
-                                    <h4> Diploma Certificate in Business Analytics</h4>
-                                    <span class="position">Harvard Business School, Online</span>
-                                    <p>Business Analytics is an 8-week, 40-hour online certificate program from Harvard Business School. Business Analytics introduces quantitative methods used to analyze data and make better management decisions. Participants hone their understanding of key concepts, managerial judgment, and ability to apply course concepts to real business problems. Business Analytics was developed by leading Harvard Business School faculty and is delivered in an active learning environment based on the HBS signature case-based learning method.</p>
-                                </div>
-                            </div>
-                        </div>
-                         <!-- End Education -->
-
-                        <!-- Start Experience -->
-                        <div id="page-2" class="page two">
-                            <h3 class="heading">Experience</h3>
-                            <div class="resume-wrap transition d-flex">
-                                <div class="icon d-flex align-items-center justify-content-center">
-                                  <span class="icon-briefcase"></span>
-                                </div>
-                                <div class="text pl-3">
-                                  <span class="date">2020-21</span>
-                                  <h4>Data Analyst</h4>
-                                  <span class="position">Henkaus Oy</span>
-                                  <ul>
-                                    <li>• Executed exploratory data analysis on over 50 health datasets collected after designing a data capturing mechanism.</li>
-                                    <li>• Developed a pipeline for dataset preparation and data processing using AWS and Python, resulting in a 34% reduction in data processing time.</li>
-                                    <li>• Conducted research on the implementation of various ETL and other data integration processes, resulting in the implementation of 2 new data integration processes for the company.</li>
-                                    <li>• Worked on the founding health data analytics team with leading doctors from Finland, resulting in the successful implementation of data-driven decision making in clinical operations.</li>
-                                  </ul>
-                                </div>
-                              </div>
-                              
-                            <div class="resume-wrap transition d-flex">
-                                <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="icon-briefcase"></span>
-                                </div>
-                                <div class="text pl-3">
-                                    <span class="date">2020</span>
-                                    <h4>Data Analyst Intern</h4>
-                                    <span class="position">Leica India</span>
-                                    <ul>
-                                        <li>• Implemented real-time forecasting and optimization using Excel, resulting in an improvement of forecasting accuracy by 15%.</li>
-                                        <li>• Developed a customizable optimization model with an 84% working accuracy, resulting in a 10% increase in production efficiency.</li>
-                                        <li>• Worked with a team of data analysts and provided support in data analysis and visualization tasks.</li>
-                                        <li>• Assisted in the development and maintenance of data pipelines using SQL and Python.</li>
-                                        <li>• Collaborated with cross-functional teams to gather, cleanse, and analyze data for various business needs.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-
-                            <div class="resume-wrap transition d-flex">
-                                <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="icon-briefcase"></span>
-                                </div>
-                                <div class="text pl-3">
-                                    <span class="date">2019</span>
-                                    <h4>Data Science Research Intern</h4>
-                                    <span class="position">IIT BHU, Varanasi</span>
-                                    <ul> 
-                                        <li>• Developed 3 ML models using concepts like feature extraction and dimensionality reduction, using TensorFlow and other machine learning libraries, resulting in an improvement of model accuracy by 12%.</li>
-                                        <li>• Conducted research on various new techniques to explain model prediction on general ML Models and implemented the best techniques resulting in a 47% increase in model interpretability.</li>
-                                        <li>• Developed and modeled algorithms for state-of-the-art techniques to boost results on pre-tested datasets by 71%, resulting in a significant improvement in model performance.</li>
-                                        <li>• Assisted in ETL process, extracted, and cleaned data from various sources to be used in modeling and research, resulting in a reduction of data preparation time by 44%.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Experience -->
-                        
-                        <!-- Start Skills -->
-                        <div id="page-3" class="page three">
-                            <h3 class="heading">Skills</h3>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="progress-wrap">
-                                        <h5>Python</h5>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width:70%">
-                                                <span>70%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="progress-wrap">
-                                        <h5>R</h5>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width:65%">
-                                                <span>65%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="progress-wrap">
-                                        <h5>SQL</h5>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width:75%">
-                                                <span>75%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="progress-wrap">
-                                        <h5>AWS</h5>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width:60%">
-                                                <span>60%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="progress-wrap">
-                                        <h5>Data Modelling</h5>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width:80%">
-                                                <span>80%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="progress-wrap">
-                                        <h5>Data Visualisation</h5>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width:85%">
-                                                <span>85%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="progress-wrap">
-                                        <h5>Data Storage & Collection</h5>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width:75%">
-                                                <span>75%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="progress-wrap">
-                                        <h5>Data Governance</h5>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width:70%">
-                                                <span>70%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Skills -->
-                        
-                        <!-- Start Awards -->
-                        <div id="page-4" class="page four">
-                            <h3 class="heading">Awards</h3>
-                            <div class="resume-wrap transition d-flex">
-                                <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="icon-badge"></span>
-                                </div>
-                                <div class="text pl-3">
-                                    <span class="date">2014-2015</span>
-                                    <h4>Special Achiever's Award</h4>
-                                    <span class="position">VIT Vellore</span>
-                                    <p>Achiever's award is awarded to for exemplary performance in competitions where the student has represented India.</p>
-                                </div>
-                            </div>
-                            <div class="resume-wrap transition d-flex">
-                                <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="icon-badge"></span>
-                                </div>
-                                <div class="text pl-3">
-                                    <span class="date">2014-2015</span>
-                                    <h4>Achiever's Award</h4>
-                                    <span class="position">VIT Vellore</span>
-                                    <p>Achiever's award is awarded to for exemplary performance in competitions within the country.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Awards -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Resume Area End -->
-
-        <!-- Start Works Area -->
-        <section class="works-area section-padding sky-blue" id="works">
-            <div class="container">
-                <!-- Start Section Title -->
-                <div class="row mb-50">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>My Projects</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Section Title -->
-
-                <div class="row mb-4">
-                    <div class="col-xs-12">
-                        <div class="filters">
-                            <ul>
-                                <li class="active" data-filter=".all">All</li>
-                                <li data-filter=".branding">Branding</li>
-                                <li data-filter=".creative">Creative Work</li>
-                                <li data-filter=".web-design">Web Design</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="filters-content">
-                    <div class="row grid">
-                        <!-- start single work item -->
-                        <div class="single-work col-lg-4 col-md-6 col-sm-12 all creative">
-                            <div class="position-relative">
-                                <div class="thumb">
-                                    <img class="image img-fluid" src="https://via.placeholder.com/360x369" alt="work">
-                                </div>
-                                <a class="overlay transition" href="#"></a>
-                                <div class="short-info transition">
-                                    <h4>Web Design</h4>
-                                    <div class="cat">Client Project</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end single work item -->
-
-                        <!-- start single work item -->
-                        <div class="single-work col-lg-4 col-md-6 col-sm-12 all web-design branding">
-                            <div class="position-relative">
-                                <div class="thumb">
-                                    <img class="image  img-fluid" src="https://via.placeholder.com/360x419" alt="work">
-                                </div>
-                                <a class="overlay transition" href="#"></a>
-                                <div class="short-info transition">
-                                    <h4>Web Design</h4>
-                                    <div class="cat">Client Project</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end single work item -->
-
-                        <!-- start single work item -->
-                        <div class="single-work col-lg-4 col-md-6 col-sm-12 all branding web-design">
-                            <div class="position-relative">
-                                <div class="thumb">
-                                    <img class="image  img-fluid" src="https://via.placeholder.com/360x339" alt="work">
-                                </div>
-                                <a class="overlay transition" href="#"></a>
-                                <div class="short-info transition">
-                                    <h4>Web Design</h4>
-                                    <div class="cat">Client Project</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end single work item -->
-
-                        <!-- start single work item -->
-                        <div class="single-work col-lg-4 col-md-6 col-sm-12 all web-design">
-                            <div class="position-relative">
-                                <div class="thumb">
-                                    <img class="image  img-fluid" src="https://via.placeholder.com/360x339" alt="work">
-                                </div>
-                                <a class="overlay transition" href="#"></a>
-                                <div class="short-info transition">
-                                    <h4>Web Design</h4>
-                                    <div class="cat">Client Project</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end single work item -->
-
-                        <!-- start single work item -->
-                        <div class="single-work col-lg-4 col-md-6 col-sm-12 all creative">
-                            <div class="position-relative">
-                                <div class="thumb">
-                                    <img class="image  img-fluid" src="https://via.placeholder.com/360x309" alt="work">
-                                </div>
-                                <a class="overlay transition" href="#"></a>
-                                <div class="short-info transition">
-                                    <h4>Web Design</h4>
-                                    <div class="cat">Client Project</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end single work item -->
-
-                        <!-- start single work item -->
-                        <div class="single-work col-lg-4 col-md-6 col-sm-12 all branding">
-                            <div class="position-relative">
-                                <div class="thumb">
-                                    <img class="image  img-fluid" src="https://via.placeholder.com/360x259" alt="work">
-                                </div>
-                                <a class="overlay transition" href="#"></a>
-                                <div class="short-info transition">
-                                    <h4>Web Design</h4>
-                                    <div class="cat">Client Project</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end single work item -->
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- End Works Area -->
-
-        <!-- Start Hire Me Area -->
-        <section class="hire-me-area section-padding">
-            <div class="container">
-                <div class="row mb-50">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Hire Me</h2>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a
-                                page when looking at its layout.
-                                some for as low as $.17 each.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                        <div class="hire-box">
-                            <h4>+44 7880030984; +91 7030609563</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="hire-box">
-                            <h4>ishan.yash17@gmail.com</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="hire-box">
-                            <h4>ishanyash.com</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <a href="#" class="btn radius-btn  mt-50" data-text="Hire Me">
-                            Hire Me
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Hire Me Area -->
-
-        <!-- Start Testimonial Area -->
-        <section class="testimonial-area section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3 col-md-12">
-
-                        <!-- start testimonial carousel -->
-                        <div class="test-slider">
-                            <!-- start tetimonial item -->
-                            <div class="test-item">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat
-                                    nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus
-                                    consequat ante ac congue. Quisque porttitor porttitor tempus.
-                                </p>
-                                <div class="author-info">
-                                    <img src="https://via.placeholder.com/50x50" alt="client">
-                                    <h4>Soura</h4>
-                                    <div class="position">Project Manager
-                                        <span>Karmen</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end tetimonial item -->
-
-                            <!-- start tetimonial item -->
-                            <div class="test-item">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat
-                                    nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus
-                                    consequat ante ac congue. Quisque porttitor porttitor tempus.
-                                </p>
-                                <div class="author-info">
-                                    <img src="https://via.placeholder.com/50x50" alt="client">
-                                    <h4>Sara Ezzat</h4>
-                                    <div class="position">Project Manager
-                                        <span>Ask</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end tetimonial item -->
-
-                            <!-- start tetimonial item -->
-                            <div class="test-item">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat
-                                    nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus
-                                    consequat ante ac congue. Quisque porttitor porttitor tempus.
-                                </p>
-                                <div class="author-info">
-                                    <img src="https://via.placeholder.com/50x50" alt="client">
-                                    <h4>Ahmed Ezzat</h4>
-                                    <div class="position">Project Manager
-                                        <span>Twitter</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end tetimonial item -->
-
-                            <!-- start tetimonial item -->
-                            <div class="test-item">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat
-                                    nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus
-                                    consequat ante ac congue. Quisque porttitor porttitor tempus.
-                                </p>
-                                <div class="author-info">
-                                    <img src="https://via.placeholder.com/50x50" alt="client">
-                                    <h4>Ishan Yash</h4>
-                                    <div class="position">Project Manager
-                                        <span>Facebook</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end tetimonial item -->
-
-                        </div>
-                        <!-- end testimonial carousel -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Testimonial Area -->
-
-        <!-- Start Blog Area -->
-        <section class="blog-area section-padding sky-blue" id="blog">
-            <div class="container">
-                <!-- Start Section Title -->
-                <div class="row mb-50">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Latest Blog</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Section Title -->
-
-                <div class="row latest_blog_inner">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="blog-left mb-5 mb-lg-0">
-                            <div class="blog-items">
-                                <div class="blog-slider owl-carousel">
-                                    <div class="item">
-                                        <img src="https://via.placeholder.com/370x220" alt="blog image">
-                                    </div>
-                                    <div class="item">
-                                        <img src="https://via.placeholder.com/370x220" alt="blog image">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-text">
-                                <div class="blog-text-inner">
-                                    <div class="blog-date">
-                                        <a href="#"><i class="icon-calendar"></i>12 July 2016</a>
-                                        <a href="#"><i class="icon-heart"></i>235</a>
-                                        <a href="#">25 Comment</a>
-                                    </div>
-
-                                    <h4>Work For Success</h4>
-                                    <p>Lorem ipsum dolor sit amet, to consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna to liqua.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="blog-right">
-                            <div class="media">
-                                <div class="media-left">
-                                    <img src="https://via.placeholder.com/138x133" alt="blog image">
-                                </div>
-                                <div class="media-body">
-                                    <h4>On UI Design Post</h4>
-                                    <a href="#">
-                                        <small><i class="icon-calendar"></i>16 JUNE 2016</small>
-                                    </a>
-                                    <p>It is a long established fact that a reader will be dis-tracted by the readable
-                                        content.</p>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left">
-                                    <img src="https://via.placeholder.com/138x133" alt="blog image">
-                                </div>
-                                <div class="media-body">
-                                    <h4>On Graphics Design Post</h4>
-                                    <a href="#">
-                                        <small><i class="icon-calendar"></i>16 JUNE 2016</small>
-                                    </a>
-                                    <p>It is a long established fact that a reader will be dis-tracted by the readable
-                                        content.</p>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left">
-                                    <img src="https://via.placeholder.com/138x133" alt="blog image">
-                                </div>
-                                <div class="media-body">
-                                    <h4>On Development Post</h4>
-                                    <a href="#">
-                                        <small><i class="icon-calendar"></i>16 JUNE 2016</small>
-                                    </a>
-                                    <p>It is a long established fact that a reader will be dis-tracted by the readable
-                                        content.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Blog Area -->
-
-        <!-- Start Contact Area -->
-        <section class="contact-area section-padding" id="contact">
-            <div class="container">
-                <!-- Start Section Title -->
-                <div class="row mb-50">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Contact Me</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Section Title -->
-        
-                <div class="column text-center">
-                    <div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
-                        <div class="media align-items-center">
-                            <div class="media-icon">
-                                <i class="icon-envelope-letter"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4>Email</h4>
-                                <a href="mailto:ishan.yash17@gmail.com">Email</a>
-                            </div>
-                        </div>
-        
-                        <div class="media align-items-center">
-                            <div class="media-icon">
-                                <i class="icon-screen-smartphone"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4>Phone</h4>
-                                <span>+44 7880030984: +91 7030609563</span>
-                            </div>
-                        </div>
-        
-                        <div class="media align-items-center">
-                            <div class="media-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4>LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/ishanyash17/">My LinkedIn</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-            </div>
-        </section>
-        
-        <!-- End Contact Area -->
-
-        <!-- Start Footer -->
-        <footer class="footer-area sky-blue">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="footer-top flex-column">
-                            <div class="footer-logo text-center">
-                                <a href="#">
-                                    <img src="assets/img//logo.png" alt="logo">
-                                </a>
-                                <h4>Follow Me</h4>
-                            </div>
-                            <div class="footer-social text-center">
-                                <a href="https://www.linkedin.com/in/ishanyash17/"><i class="fa fa-linkedin transition"></i></a>
-                                <a href="https://twitter.com/IshanYash17"><i class="fa fa-twitter transition"></i></a>
-                                <a href="https://www.instagram.com/ishanyash17/"><i class="fa fa-instagram transition"></i></a>
-                                <a href="https://github.com/ishanyash"><i class="fa fa-github transition"></i></a>
-                                <a href="https://ishan-yash17.medium.com/"><i class="fa fa-medium transition"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row footer-bottom text-center justify-content-center">
-                    <p class="col-lg-8 col-sm-12 footer-text">
-                        Copyright ©All rights reserved | Cobra is made with <i class="fa fa-heart-o"
-                                                                                aria-hidden="true"></i> by <a href="https://themeforest.net/user/karimezzat" target="_blank">KarimEzZat</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <!-- End Footer -->
-
-        <!-- Essential jQuery Plugins
-        ================================================== -->
-        <!-- Main jQuery -->
-        <script src="assets/js/jquery-3.2.0.min.js"></script>
-        <!-- Popper js -->
-        <script src="assets/js/popper.min.js"></script>
-        <!-- Twitter Bootstrap -->
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Slick Nav js -->
-        <script src="assets/js/jquery.slicknav.min.js"></script>
-        <!-- Isotop js filter -->
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-        <!-- Owl Slider -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- Slick Slider -->
-        <script src="assets/js/slick.min.js"></script>
-        <!-- Scroll Up js -->
-        <script src="assets/js/jquery.scrollUp.min.js"></script>
-        <!-- Custom Function js -->
-        <script src="assets/js/main.js"></script>
-
-    </body>
-
+    <script src="script.js"></script>
+</body>
 </html>
