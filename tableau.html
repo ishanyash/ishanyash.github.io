@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau Dashboard - Ishan Yash</title>
+    <link rel="stylesheet" crossorigin href="assets/index-RWfPwp3M.css">
+    <style>
+      :root {
+        --color-primary: #FDF000;
+        --color-secondary: #A7A11D;
+        --color-dark: #120C06;
+        --color-accent: #544E12;
+        --color-light: #FFFDEF;
+        --font-primary: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        --transition-standard: all .3s cubic-bezier(.25, .1, .25, 1);
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font-primary);
+        background-color: var(--color-light);
+        color: var(--color-dark);
+      }
+
+      .tableau-page {
+        min-height: 100vh;
+        background-color: var(--color-light);
+        padding-left: 80px;
+      }
+      
+      .tableau-header {
+        background-color: var(--color-primary);
+        padding: 80px 0 40px;
+      }
+
+      .tableau-title {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: var(--color-dark);
+      }
+
+      .tableau-description {
+        max-width: 600px;
+        margin-bottom: 24px;
+        color: var(--color-dark);
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        color: var(--color-dark);
+        text-decoration: none;
+        font-weight: 600;
+        margin-bottom: 24px;
+        transition: var(--transition-standard);
+      }
+
+      .back-link:hover {
+        color: var(--color-accent);
+        text-decoration: underline;
+      }
+
+      .external-link {
+        display: inline-flex;
+        align-items: center;
+        background-color: var(--color-dark);
+        color: var(--color-primary);
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 16px;
+        transition: var(--transition-standard);
+        margin-left: 16px;
+      }
+
+      .external-link:hover {
+        background-color: var(--color-accent);
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .tableau-container {
+        padding: 40px 0;
+      }
+      
+      .tableau-embed-container {
+        width: 100%;
+        height: 80vh;
+        min-height: 700px;
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(18, 12, 6, 0.1);
+        padding: 20px;
+        margin-bottom: 40px;
+      }
+      
+      .tableauPlaceholder {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      
+      .tableau-details {
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: 0 4px 20px rgba(18, 12, 6, 0.05);
+        margin-bottom: 40px;
+      }
+
+      .tableau-details h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        color: var(--color-dark);
+      }
+
+      .tableau-details p {
+        color: #666;
+        margin-bottom: 24px;
+        line-height: 1.6;
+      }
+      
+      .tableau-features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        margin-top: 24px;
+      }
+      
+      .feature {
+        padding: 24px;
+        background-color: var(--color-light);
+        border-radius: 12px;
+        border-left: 4px solid var(--color-primary);
+        transition: var(--transition-standard);
+      }
+
+      .feature:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 25px rgba(18, 12, 6, 0.1);
+      }
+
+      .feature h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: var(--color-dark);
+      }
+
+      .feature p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0;
+      }
+
+      /* Sidebar Styles */
+      .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 80px;
+        background-color: var(--color-dark);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+      }
+
+      .sidebar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+      }
+
+      .nav-item {
+        color: var(--color-light);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: var(--font-primary);
+        position: relative;
+        padding: 12px 8px;
+        text-align: center;
+        min-width: 60px;
+        transition: var(--transition-standard);
+      }
+
+      .nav-item:hover {
+        color: var(--color-primary);
+        transform: scale(1.05);
+      }
+
+      .nav-item.active {
+        color: var(--color-primary);
+      }
+
+      .nav-item:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 0;
+        height: 2px;
+        background-color: var(--color-primary);
+        transition: var(--transition-standard);
+      }
+
+      .nav-item:hover:after,
+      .nav-item.active:after {
+        width: 80%;
+      }
+
+      .mr-2 {
+        margin-right: 8px;
+      }
+
+      .ml-2 {
+        margin-left: 8px;
+      }
+
+      .button-container {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 16px;
+      }
+      
+      @media (max-width: 768px) {
+        .tableau-page {
+          padding-left: 0;
+          padding-bottom: 80px;
+        }
+        
+        .tableau-embed-container {
+          height: 60vh;
+          min-height: 500px;
+          padding: 15px;
+        }
+
+        .sidebar {
+          bottom: 0;
+          top: auto;
+          width: 100%;
+          height: 80px;
+          flex-direction: row;
+          padding: 0;
+          justify-content: center;
+        }
+
+        .sidebar-nav {
+          flex-direction: row;
+          gap: 24px;
+        }
+
+        .nav-item {
+          font-size: 14px;
+          padding: 8px 12px;
+          min-width: auto;
+        }
+
+        .button-container {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+        }
+
+        .external-link {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+      <nav class="sidebar-nav">
+        <a href="index.html#hero" class="nav-item">Home</a>
+        <a href="index.html#about" class="nav-item">About</a>
+        <a href="index.html#projects" class="nav-item">Projects</a>
+        <a href="tableau.html" class="nav-item active">Tableau</a>
+      </nav>
+    </div>
+
+    <div class="tableau-page">
+      <header class="tableau-header">
+        <div class="container">
+          <a href="index.html" class="back-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back to Portfolio
+          </a>
+          <h1 class="tableau-title">London Smart Meter Data Analysis</h1>
+          <p class="tableau-description">
+            Explore my interactive data visualization showcasing London's energy consumption patterns 
+            across different boroughs using smart meter data. Analyze trends, compare regions, and 
+            discover insights through multiple interactive filters.
+          </p>
+          <div class="button-container">
+            <a href="https://public.tableau.com/app/profile/ishan.yash/viz/Finallondonmap_17006781129530/FinalDashboard" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="external-link">
+              Open in Tableau Public
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                <path d="m18 13 6-6-6-6"></path>
+                <path d="M2 5h12"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="tableau-container">
+        <div class="container">
+          <div class="tableau-embed-container">
+            <!-- Your Tableau Dashboard Embed -->
+            <div class='tableauPlaceholder' id='viz1748862228362' style='position: relative; width: 100%; height: 100%;'>
+              <noscript>
+                <a href='#'>
+                  <img alt='Smart Meter Data Analysis - London ' src='https://public.tableau.com/static/images/Fi/Finallondonmap_17006781129530/FinalDashboard/1_rss.png' style='border: none' />
+                </a>
+              </noscript>
+              <object class='tableauViz' style='display:none; width: 100%; height: 100%;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Finallondonmap_17006781129530/FinalDashboard' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/Fi/Finallondonmap_17006781129530/FinalDashboard/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+              </object>
+            </div>
+          </div>
+
+          <div class="tableau-details">
+            <h2>Dashboard Features</h2>
+            <p>
+              This comprehensive analysis of London's smart meter data provides insights into energy 
+              consumption patterns across different boroughs, helping understand usage trends and 
+              regional variations in energy behavior.
+            </p>
+            
+            <div class="tableau-features">
+              <div class="feature">
+                <h3>Interactive Map</h3>
+                <p>Explore energy consumption data across London boroughs with an intuitive geographic visualization that highlights usage patterns.</p>
+              </div>
+              <div class="feature">
+                <h3>Time-based Analysis</h3>
+                <p>Filter and analyze data across different time periods to identify seasonal trends and consumption changes over time.</p>
+              </div>
+              <div class="feature">
+                <h3>Borough Comparison</h3>
+                <p>Compare energy usage between different London boroughs to understand regional differences and consumption behavior.</p>
+              </div>
+              <div class="feature">
+                <h3>Smart Meter Insights</h3>
+                <p>Analyze smart meter data to understand household energy consumption patterns and identify efficiency opportunities.</p>
+              </div>
+              <div class="feature">
+                <h3>Dynamic Filtering</h3>
+                <p>Use multiple filters to drill down into specific data points, time ranges, and geographic regions for detailed analysis.</p>
+              </div>
+              <div class="feature">
+                <h3>Data Export</h3>
+                <p>Export visualizations and data for further analysis or presentation purposes using Tableau's built-in export features.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1748862228362');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      
+      // Responsive sizing for better mobile experience
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '700px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '600px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '500px';
+      }
+      
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </body>
+</html>
